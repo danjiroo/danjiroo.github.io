@@ -1,0 +1,83 @@
+/* Media Queries */
+@media only screen and (max-height: 850px) {
+    header .header_con { margin: 100px auto 0; }
+}
+@media only screen and (max-height: 700px) {
+    #modal_iframe, #modal_img { height: 400px; }
+}
+@media only screen and (max-height: 500px) {
+    #modal_iframe, #modal_img { height: 350px; }
+}
+@media only screen and (max-width: 1100px ) {
+    /* .main_con { width: 100%; } */
+    .main_con h3 { text-align: center; margin: 0 auto; }
+    .aboutme_imgs { width: 100%; }
+    .aboutme_div { text-align: center; }
+    .aboutme_imgs li span q { font-size: 3vw; margin: -15px; line-height: 160%; }
+    .aboutme_imgs li span { font-size: 4vw; }
+    .wrapper.btm_achievements { text-align: center; }
+    .skills_con { text-align: center; }
+}
+@media only screen and (max-width: 1024px ) {
+    body.active { margin-left: 250px; }
+    .nav_con { width: 300px; left: -250px }
+    .nav_con.active { width: 250px; }
+    .nav_main { width: 250px; }
+    .nav_con h2 { font-size: 23px; padding: 25px; }
+    .nav_con h2 span { font-size: 20px; }
+    .nav_list { padding: 0 25px; }
+    .contact_info { padding: 60px 25px 0; }
+    .social_media { padding: 30px 25px; }
+    .apps_ul li, .ach_imgs li { width: 23%; }
+    .viewbtns { right: 15px }
+}
+@media only screen and (max-width: 850px ) {
+    .apps_ul.active, .ach_imgs.active { -ms-flex-wrap: wrap; flex-wrap: wrap; }
+    .apps_ul li.active, .ach_imgs li.active { width: 42%; margin-bottom: 10px }
+}
+@media only screen and (max-width: 800px ) {
+    .ach_imgs, .apps_ul { width: 500px; margin: 0 auto; }
+    .ach_imgs li, .apps_ul li { width: 240px; }
+    /* .apps_ul:hover li, .ach_imgs:hover li { opacity: 1 } */
+    .apps_ul li:hover span { letter-spacing: normal; }
+    .aboutme_imgs { margin: 100px 0 30px; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+    .aboutme_div li { width: 50%; }
+    .aboutme_imgs li span { font-size: 7vw; }
+    .aboutme_imgs li span q { font-size: 5vw; }
+    .wrapper.btm_achievements { padding: 50px 30px; }
+    #modal_img { height: auto; }
+    .viewbtns { position: static; transform: none; }
+    .viewless, .viewmore { display: inline; }
+}
+@media only screen and (max-width: 600px ) {
+    body.active { margin-left: 0; }
+    header .header_con { margin: 100px auto 0; }
+    .apps_ul, .ach_imgs { -ms-flex-wrap: wrap; flex-wrap: wrap; margin: 0 auto; max-width: 100%; }
+    .apps_ul li, .ach_imgs li { margin: 0 4px 10px; width: 45%; }
+    .apps_ul li span { font-size: 17px; width: 97%; }
+    .aboutme_imgs { margin: 50px 0 30px; }
+    .aboutme_imgs li span q { margin: -15px; }
+    .show_portfolio2 .modal_con { top: 12%; }
+    .mode_msg { width: 100%; }
+    .mode_msg small { top: 9px; }
+    .graph { display: block; }
+    .bar progress { transform: none; width: 66%; }
+    .bar { justify-content: space-between; flex-direction: row; min-height: 50px; width: 100%; }
+    .bar label { position: static; }
+}
+@media only screen and (max-width: 500px ) {
+    .apps_ul, .ach_imgs { width: 275px; }
+    .apps_ul li, .ach_imgs li { width: 275px; }
+    .apps_ul li.active, .ach_imgs li.active { width: 275px }
+    .copyright q { display: none; }
+    .copyright span { display: block; }
+    .btm_achievements p, .aboutme_div p, .skills_con p, .main_con p { text-align: center; }
+}
+@media only screen and (max-width: 400px ) {
+    .aboutme_imgs li span { font-size: 24px; }
+    .aboutme_imgs li span q { font-size: 24px; margin: -8px; line-height: 90%; }
+    .playmusic_gif { right: 0; }
+}
+@media only screen and (max-width: 350px ) {
+    .modal_link { padding-right: 20px; }
+}

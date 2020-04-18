@@ -1,0 +1,25 @@
+/* lightmode props nako */
+:root.lightmode { --white: #000 !important; --black: #fff !important; --darker: #f1f1f1 !important; --lmblack: var(--white) !important; --lmwhite: var(--black) !important; }
+.nav_toggle.lightmode.active small q { background: var(--lmblack) !important; }
+.nav_toggle.lightmode.active span { background: var(--lmblack) !important; }
+.nav_con h2.lightmode { color: var(--lmwhite) !important; }
+.nav_list li a.lightmode { color: var(--lmwhite) !important; }
+.contact_info a.lightmode { color: var(--lmwhite) !important; }
+.social_media a.lightmode { color: var(--lmwhite) !important; }
+.apps_ul li.lightmode { box-shadow: 0 3px 5px rgba(0,0,0,0.4) !important; }
+.apps_ul li:hover.lightmode { box-shadow: 0 2px 12px rgba(1,145,145,0.7) !important; }
+.apps_ul li span.lightmode { color: var(--lmwhite) !important; }
+.modal_close.lightmode, .modal_close2.lightmode { color: var(--lmwhite) !important;  border: 2px solid var(--lmwhite) !important; }
+#modal_iframe.lightmode, #modal_img.lightmode { background: var(--lmwhite) !important; }
+.aboutme_imgs.lightmode { color: var(--lmwhite) !important; }
+.ach_imgs li.lightmode { box-shadow: 0 3px 5px rgba(0,0,0,0.4) !important; }
+.ach_imgs li:hover.lightmode { box-shadow: 0 2px 12px rgba(1,145,145,0.7) !important; }
+#bottom.lightmode { color: var(--lmblack) !important; }
+footer.lightmode { color: var(--lmblack) !important; }
+.footer_con.lightmode { border-top: 1px dotted var(--lmblack) !important; }
+.back_to_top.lightmode { color: var(--lmwhite) !important; }
+.mode_msg.lightmode p { color: var(--lmwhite) !important; }
+.mode_msg.lightmode .togglebtn { color: var(--lmwhite) !important; }
+.mode_msg.lightmode.hidden .togglebtn { color: var(--lmblack) !important; }
+.mode_msg.lightmode.hidden .togglebtn.override { color: var(--lmwhite) !important; }
+.skills.lightmode { background: rgba(0,0,0,.1); }
