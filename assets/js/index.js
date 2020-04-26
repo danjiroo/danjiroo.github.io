@@ -14,23 +14,36 @@ $(function(){
         }
 	});
 
-    $('.apps_ul li:nth-child(-n+4).notlink').click(function (){
+    // $('.apps_ul li:nth-child(-n+4).notlink').click(function (){
+	// 	let eq_id = $(this).index();
+	// 	let eq_arr = [ 'pos', 'covid', 'userlist', 'todo' ];
+	// 	if (eq_id == 0) {
+	// 		$('#modal_iframe').attr({src: eq_arr[eq_id] + '/index.html'});
+	// 		$('.modal_link a').attr({href: 'https://codeyuri.github.io/' + eq_arr[eq_id] + '/'});
+    //    		$('.modal_link span').html('https://codeyuri.github.io/' + eq_arr[eq_id] + '/');
+	// 	} else if (eq_id == 1) {
+	// 		$('#modal_iframe').attr({src: eq_arr[eq_id] + '/index.html'});
+	// 		$('.modal_link a').attr({href: 'https://codeyuri.github.io/' + eq_arr[eq_id] + '/'});
+    //    		$('.modal_link span').html('https://codeyuri.github.io/' + eq_arr[eq_id] + '/');
+	// 	} else {
+	// 		$('#modal_iframe').attr({src: 'portfolio/' + eq_arr[eq_id] + '/index.html'});
+	// 		$('.modal_link a').attr({href: 'https://codeyuri.github.io/portfolio/' + eq_arr[eq_id] + '/'});
+	// 		$('.modal_link span').html('https://codeyuri.github.io/portfolio/' + eq_arr[eq_id] + '/');
+	// 	}
+	// 	$('.show_portfolio').fadeIn();
+	// });
+
+    $('.apps_ul li.notlink').click(function (){
 		let eq_id = $(this).index();
-		let eq_arr = [ 'covid', 'userlist', 'todo' ];
-		if (eq_id == 0) {
-			$('#modal_iframe').attr({src: eq_arr[eq_id] + '/index.html'});
-			$('.modal_link a').attr({href: 'https://codeyuri.github.io/' + eq_arr[eq_id] + '/'});
-       		$('.modal_link span').html('https://codeyuri.github.io/' + eq_arr[eq_id] + '/');
-		} else {
-			$('#modal_iframe').attr({src: 'portfolio/' + eq_arr[eq_id] + '/index.html'});
-			$('.modal_link a').attr({href: 'https://codeyuri.github.io/portfolio/' + eq_arr[eq_id] + '/'});
-			$('.modal_link span').html('https://codeyuri.github.io/portfolio/' + eq_arr[eq_id] + '/');
-		}
+		let eq_arr = [ 'pos', 'covid', 'userlist', 'todo' ];
+		$('#modal_iframe').attr({src: 'portfolio/' + eq_arr[eq_id] + '/index.html'});
+		$('.modal_link a').attr({href: 'https://codeyuri.github.io/portfolio/' + eq_arr[eq_id] + '/'});
+		$('.modal_link span').html('https://codeyuri.github.io/portfolio/' + eq_arr[eq_id] + '/');
 		$('.show_portfolio').fadeIn();
 	});
 
 	// this is only for my dummy portfolio
-	$('.apps_ul li:nth-child(n+5).notlink').click(function (){
+	$('.apps_ul li.dummy').click(function (){
         $('#modal_img').attr({src: 'assets/images/dummy.jpg', alt: 'dummy image'});
 		$('.show_portfolio2').fadeIn();
 	});
