@@ -178,7 +178,7 @@ main { color: var(--white); font-size: 22px; line-height: 35px; }
 
 .skills_list { display: flex; justify-content: space-between; align-items: center; margin-top: 50px; }
 .skills_list li { position: relative; text-align: center; }
-.skills_list li::before { display: block; position: relative; margin-bottom: 15px; }
+.skills_list li::before { display: block; position: relative; margin-bottom: 15px; opacity: 0.8; }
 .skills_list li:nth-child(1)::before { content: url('../images/skills/html.png'); }
 .skills_list li:nth-child(2)::before { content: url('../images/skills/css.png'); }
 .skills_list li:nth-child(3)::before { content: url('../images/skills/js.png'); }
@@ -190,6 +190,9 @@ main { color: var(--white); font-size: 22px; line-height: 35px; }
 .skills_list li:nth-child(9)::before { content: url('../images/skills/mysql.png'); }
 .skills_list li:nth-child(10)::before { content: url('../images/skills/git.png'); }
 .skills_list li span { position: relative; display: block; }
+
+.skills_list li:hover::before { opacity: 1; }
+.skills_list li:hover span { color: #1193BD; }
 
 /* Footer */
 footer { color: var(--ddd); text-align: center; letter-spacing: 3px; font-size: 14px; }
