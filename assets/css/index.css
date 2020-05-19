@@ -132,17 +132,17 @@ main { color: var(--white); font-size: 22px; line-height: 35px; }
 .apps_ul li:nth-child(n+5) { display:none; }
 .apps_ul li:hover span { background: -webkit-gradient( linear, left top, right top, from(var(--tomato)), to(var(--purple))); background: -o-linear-gradient( left, var(--tomato), var(--purple)); background: linear-gradient( to right, var(--tomato), var(--purple)); letter-spacing: 1px; }
 .apps_ul li img { width: 100%; height: auto; display: block; }
-.apps_ul li span { font-size: 18px; position: absolute; bottom: 4px; left: 50%; -webkit-transform: translate(-50%); -ms-transform: translate(-50%); transform: translate(-50%); color: var(--white); background: -webkit-gradient( linear, left top, right top, from(var(--lightteal)), to(var(--teal))); background: -o-linear-gradient( left, var(--lightteal), var(--teal)); background: linear-gradient( to right, var(--lightteal), var(--teal)); width: 92%; -webkit-transition: all .3s linear; -o-transition: all .3s linear; transition: all .3s linear; }
+.apps_ul li span { font-size: 18px; position: absolute; bottom: 4px; left: 50%; -webkit-transform: translate(-50%); -ms-transform: translate(-50%); transform: translate(-50%); color: var(--white); background: -webkit-gradient( linear, left top, right top, from(var(--lightteal)), to(var(--teal))); background: -o-linear-gradient( left, var(--lightteal), var(--teal)); background: linear-gradient( to right, var(--lightteal), var(--teal)); width: 95%; -webkit-transition: all .3s linear; -o-transition: all .3s linear; transition: all .3s linear; }
 .apps_ul a { display: block; }
-.viewbtns { position: absolute; top: 57%; right: 0; }
-.viewmore, .viewless { display: block; font-size: 28px; cursor: pointer; padding: 3px 7px; font-family: Calibri; }
+.viewbtns { position: absolute; top: 57%; right: -5px; }
+.viewmore, .viewless { display: block; font-size: 45px; cursor: pointer; padding: 3px 7px; font-family: Calibri; }
 .viewmore:hover, .viewless:hover { color: var(--cyan); -webkit-transition: all .3s linear; -o-transition: all .3s linear; transition: all .3s linear; }
 .viewless { display: none }
 
 /* Bottom */
 #bottom { position: relative; z-index: 1; color: var(--white); font-size: 22px; line-height: 35px; }
-.wrapper.bottom_con { padding: 0 35px; }
-.aboutme_div { padding: 0 0 40px; margin-top: 15%; }
+.wrapper.bottom_con { padding: 80px 35px; }
+.aboutme_div { padding: 0; margin-top: 15%; }
 .aboutme_div h3 { letter-spacing: 2px; font-weight: 100; padding: 0 0 10px; }
 .aboutme_div p { letter-spacing: 2px; font-size: 17px; margin-bottom: 15px; text-align: justify; }
 .aboutme_div p a { color: var(--white); font-style: italic; font-weight: bold; }
@@ -166,7 +166,7 @@ main { color: var(--white); font-size: 22px; line-height: 35px; }
 .ach_imgs li img { width: 100%; height: auto; display: block; }
 
 .skills { background: rgba(0,0,0,0.3); color: var(--white); }
-.skills_con { padding: 50px 30px; }
+.skills_con { padding: 80px 30px; }
 .skills_con h3 { letter-spacing: 2px; font-weight: 100; padding: 10px 5px; }
 .skills_con p { letter-spacing: 2px; font-size: 17px; padding: 0 5px; text-align: justify; margin-bottom: 15px }
 
@@ -175,7 +175,22 @@ main { color: var(--white); font-size: 22px; line-height: 35px; }
 .bar progress { transform: rotate(-90deg); width: 100px; border-radius: 0; border: none; background: #aaa; }
 .bar progress:hover { background: #fff; }
 .bar label { position: absolute; bottom: 0; }
-  
+
+.skills_list { display: flex; justify-content: space-between; align-items: center; margin-top: 50px; }
+.skills_list li { position: relative; text-align: center; }
+.skills_list li::before { display: block; position: relative; margin-bottom: 15px; }
+.skills_list li:nth-child(1)::before { content: url('../images/skills/html.png'); }
+.skills_list li:nth-child(2)::before { content: url('../images/skills/css.png'); }
+.skills_list li:nth-child(3)::before { content: url('../images/skills/js.png'); }
+.skills_list li:nth-child(4)::before { content: url('../images/skills/react.png'); }
+.skills_list li:nth-child(5)::before { content: url('../images/skills/redux.png'); }
+.skills_list li:nth-child(6)::before { content: url('../images/skills/jquery.png'); }
+.skills_list li:nth-child(7)::before { content: url('../images/skills/php.png'); }
+.skills_list li:nth-child(8)::before { content: url('../images/skills/wp.png'); }
+.skills_list li:nth-child(9)::before { content: url('../images/skills/mysql.png'); }
+.skills_list li:nth-child(10)::before { content: url('../images/skills/git.png'); }
+.skills_list li span { position: relative; display: block; }
+
 /* Footer */
 footer { color: var(--ddd); text-align: center; letter-spacing: 3px; font-size: 14px; }
 .footer_con { position: relative; z-index: 1; padding: 40px 20px; border-top: 1px dotted var(--ccc); }

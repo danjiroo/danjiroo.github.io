@@ -33,6 +33,7 @@ $(function(){
 	// 	$('.show_portfolio').fadeIn();
 	// });
 
+	// not used anymore since ako gi direct link na lang instead of modal iframes
     $('.apps_ul li.notlink').click(function (){
 		let eq_id = $(this).index();
 		let eq_arr = [ 'pos', 'covid', 'userlist', 'todo' ];
@@ -44,16 +45,16 @@ $(function(){
 
 	// this is only for my dummy portfolio
 	$('.apps_ul li.dummy').click(function (){
-        $('#modal_img').attr({src: 'assets/images/dummy.jpg', alt: 'dummy image'});
+        $('#modal_img').attr({src: 'assets/images/projects/dummy.jpg', alt: 'dummy image'});
 		$('.show_portfolio2').fadeIn();
 	});
 	
 	$('.ach_imgs li').click(function (){
 		let eq_id = $(this).index();
 		if ( eq_id >= 3 ) {
-			$('#modal_img').attr({src: 'assets/images/dummy.jpg', alt: 'dummy image'});
+			$('#modal_img').attr({src: 'assets/images/projects/dummy.jpg', alt: 'dummy image'});
 		} else {
-			$('#modal_img').attr({src: 'assets/images/btm-img' + (eq_id+1) + '.jpg', alt: 'certificate'});
+			$('#modal_img').attr({src: 'assets/images/achievements/btm-img' + (eq_id+1) + '.jpg', alt: 'certificate'});
 		}
 		$('.show_portfolio2').fadeIn();
 	});

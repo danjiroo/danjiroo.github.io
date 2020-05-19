@@ -12,11 +12,9 @@
     /* .main_con { width: 100%; } */
     .main_con h3 { text-align: center; margin: 0 auto; }
     .aboutme_imgs { width: 100%; }
-    .aboutme_div { text-align: center; }
     .aboutme_imgs li span q { font-size: 3vw; margin: -15px; line-height: 160%; }
     .aboutme_imgs li span { font-size: 4vw; }
-    .wrapper.btm_achievements { text-align: center; }
-    .skills_con { text-align: center; }
+    .aboutme_div, .aboutme_div p, .btm_achievements p, .skills_con p, .skills_con, .wrapper.btm_achievements, .main_con p { text-align: center; }
 }
 @media only screen and (max-width: 1024px ) {
     body.active { margin-left: 250px; }
@@ -44,6 +42,8 @@
     .aboutme_div li { width: 50%; }
     .aboutme_imgs li span { font-size: 7vw; }
     .aboutme_imgs li span q { font-size: 5vw; }
+    .skills_list { flex-wrap: wrap; justify-content: center; }
+    .skills_list li { width: 20%; margin-bottom: 25px; }
     .wrapper.btm_achievements { padding: 50px 30px; }
     #modal_img { height: auto; }
     .viewbtns { position: static; transform: none; }
@@ -57,6 +57,7 @@
     .apps_ul li span { font-size: 17px; width: 97%; }
     .aboutme_imgs { margin: 50px 0 30px; }
     .aboutme_imgs li span q { margin: -15px; }
+    .skills_list li { width: 32%; }
     .show_portfolio2 .modal_con { top: 12%; }
     .mode_msg { width: 100%; }
     .mode_msg small { top: 9px; }
@@ -77,6 +78,7 @@
     .aboutme_imgs li span { font-size: 24px; }
     .aboutme_imgs li span q { font-size: 24px; margin: -8px; line-height: 90%; }
     .playmusic_gif { right: 0; }
+    .skills_list li { width: 45%; }
 }
 @media only screen and (max-width: 350px ) {
     .modal_link { padding-right: 20px; }

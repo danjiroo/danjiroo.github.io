@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>JavaScript Practice #1 | Real Time Editor</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="description" content="HTML Real Time Editor created with vanilla JavaScript">
+	<link rel=icon href="images/favicon.png" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="main">
+			<textarea 
+				id="editor" 
+				onkeyup="keyInput()" 
+				onkeydown="if(event.keyCode===9){
+					var v=this.value,
+						s=this.selectionStart,
+						e=this.selectionEnd;
+						
+						this.value=v.substring(0, s)+'\&nbsp;\&nbsp;'+v.substring(e);
+						this.selectionStart=this.selectionEnd=s+1;return false;
+				}"
+				placeholder="Your html code goes here..."
+			>
+			</textarea>
+			<iframe id="view"></iframe>
+			<p id="samp"></p>
+			<img src="images/reset.png" id="reset" onclick="reset()">
+		</div>
+		<footer>
+			<div class="footer_text">
+				<p>REAL TIME EDITOR</p>
+				<p>HTML | CSS | JAVASCRIPT</p>
+				<p>by Danilo Quesada III</p>
+			</div>
+			<div id="options">
+				<span class="dragtip">Drag the bar to resize the output's screen</span>
+				<div class="op_right">
+					<div class="resize">
+						<b>Resize Box:</b>
+						<input type="range" id="size" onchange="resize()" placeholder="Box Size: Input # e.g ' 50%'" min="1" max="150" value="75"/>
+					</div>
+					<p id="pixels"></p>
+				</div>
+		</div>
+		</footer>
+	</div>
+
+	<!-- functions -->
+	<script type="text/javascript">
+		function keyInput() {
+			var textContent = document.getElementById('editor').value;
+			document.getElementById('view').srcdoc = textContent;
+		}
+		function resize() {
+			var newSize = document.getElementById('size').value;
+			document.getElementById('view').style.flex = newSize+'%';
+			showpixels();
+		}
+		function reset() {
+			document.getElementById('editor').value = "";
+			document.getElementById('view').srcdoc = "";
+		}
+		function showpixels() {
+			var currentWidth = document.getElementById('view').clientWidth;
+			var currentHeight = document.getElementById('view').clientHeight;
+			document.getElementById('pixels').innerHTML = 'Current Size is: ' + currentWidth + ' x ' + currentHeight + ' pixels';
+		}
+	</script>
+</body>
+</html>
