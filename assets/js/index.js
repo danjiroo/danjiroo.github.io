@@ -177,8 +177,10 @@ $(function(){
 		$(this).toggleClass("paused");
 		if (audio.paused == false) {
 			audio.pause();
+			removeLightmode();
 		} else {
 			audio.play();
+			addLightmode();
 		}
 	});
 
