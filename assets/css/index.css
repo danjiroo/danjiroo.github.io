@@ -126,16 +126,27 @@ main { color: var(--white); font-size: 22px; line-height: 35px; }
 .main_con h3 span { display: block; font-size: 14px; font-style: italic; line-height: 20px; padding: 10px 0; }
 .main_con p { letter-spacing: 2px; font-size: 17px; padding: 0 5px 15px; margin-bottom: 15px; text-align: justify; }
 .apps_ul { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; flex-wrap: wrap; }
-.apps_ul:hover li { opacity: 0.7 }
-.apps_ul li { color: #aaa; cursor: pointer; position: relative; margin: 0 4px 10px; width: 24%; }
-.apps_ul li:hover { opacity: 1; z-index: 1; color: var(--white); -webkit-transition: all .3s linear; -o-transition: all .3s linear; transition: all .3s linear; -webkit-transform: scale(1.08); -ms-transform: scale(1.08); transform: scale(1.08); -webkit-box-shadow: 0 2px 12px rgba(255,255,255,0.7); box-shadow: 0 2px 12px rgba(255,255,255,0.7); }
+.apps_ul li { color: #aaa; position: relative; margin: 0 4px 10px; width: 24%; overflow: hidden; -webkit-transition: all .3s linear; transition: all .3s linear; }
 .apps_ul li:nth-child(n+5) { display:none; }
-.apps_ul li:hover span { background: -webkit-gradient( linear, left top, right top, from(var(--tomato)), to(var(--purple))); background: -o-linear-gradient( left, var(--tomato), var(--purple)); background: linear-gradient( to right, var(--tomato), var(--purple)); letter-spacing: 1px; }
-.apps_ul li img { width: 100%; height: auto; display: block; }
-.apps_ul li span { font-size: 18px; position: absolute; bottom: 4px; left: 50%; -webkit-transform: translate(-50%); -ms-transform: translate(-50%); transform: translate(-50%); color: var(--white); background: -webkit-gradient( linear, left top, right top, from(var(--lightteal)), to(var(--teal))); background: -o-linear-gradient( left, var(--lightteal), var(--teal)); background: linear-gradient( to right, var(--lightteal), var(--teal)); width: 95%; -webkit-transition: all .3s linear; -o-transition: all .3s linear; transition: all .3s linear; }
+.apps_ul li img { width: 100%; height: auto; display: block; -webkit-transition: all .3s linear; transition: all .3s linear; }
+.apps_ul li a.apps_button { font-size: 18px; position: absolute; bottom: 0; left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); color: var(--white); background: #13abb6; width: 100%; -webkit-transition: all .3s linear; -o-transition: all .3s linear; transition: all .3s linear; }
 .apps_ul a { display: block; }
-.viewbtns { position: absolute; top: 57%; right: -5px; }
-.viewmore, .viewless { display: block; font-size: 45px; cursor: pointer; padding: 3px 7px; font-family: Calibri; }
+.apps_ul .apps_desc { opacity: 0; position: absolute; top: 0; left: 0; right: 0; bottom: 32px; color: #fff; display: flex; justify-content: center; align-items: center; background: linear-gradient( to top, var(--teal), hsla(189, 75%, 42%, 0.7)); flex-direction: column; -webkit-transition: all .3s linear; transition: all .3s linear; }
+.apps_desc p { margin: 0; padding: 10px 15px 0; letter-spacing: 0; text-align: center; line-height: 25px; }
+.apps_link { display: flex; justify-content: center; align-items: center; }
+.apps_link a { transform: scale(0.6); opacity: 1; }
+.apps_link a:first-child { content: url('../images/skills/git.png'); }
+.apps_link a:last-child { content: url('../images/go.png'); }
+
+.apps_ul:hover li { opacity: 0.7 }
+.apps_ul li:hover { opacity: 1; z-index: 1; color: var(--white); -webkit-transition: all .3s linear; -o-transition: all .3s linear; transition: all .3s linear; }
+.apps_ul li:hover .apps_desc { opacity: 1; -webkit-transition: all .3s linear; transition: all .3s linear; }
+.apps_ul li:hover img { -webkit-transform: scale(1.1); -ms-transform: scale(1.1); transform: scale(1.1); -webkit-transition: all .3s linear; transition: all .3s linear; }
+.apps_ul li:hover a.apps_button { background: var(--teal); letter-spacing: 1px; -webkit-transition: all .3s linear; transition: all .3s linear; }
+.apps_link a:hover { opacity: 0.7; filter: invert(100); -webkit-transition: all .3s linear; transition: all .3s linear; }
+
+.viewbtns { position: absolute; top: 57%; right: 0; }
+.viewmore, .viewless { display: block; font-size: 40px; cursor: pointer; line-height: 110%; font-family: Calibri; }
 .viewmore:hover, .viewless:hover { color: var(--cyan); -webkit-transition: all .3s linear; -o-transition: all .3s linear; transition: all .3s linear; }
 .viewless { display: none }
 
@@ -161,9 +172,10 @@ main { color: var(--white); font-size: 22px; line-height: 35px; }
 .btm_achievements p { letter-spacing: 2px; font-size: 17px; padding: 0 5px; text-align: justify; margin-bottom: 15px; }
 .ach_imgs { padding: 20px 0; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; flex-wrap: wrap; }
 .ach_imgs:hover li { opacity: 0.7 }
-.ach_imgs li { color: #aaa; cursor: pointer; position: relative; margin: 0 4px 10px; width: 24%; }
-.ach_imgs li:hover { opacity: 1; z-index: 1; color: var(--white); -webkit-transition: all .3s linear; -o-transition: all .3s linear; transition: all .3s linear; -webkit-transform: scale(1.1); -ms-transform: scale(1.1); transform: scale(1.1); -webkit-box-shadow: 0 2px 12px rgba(255,255,255,0.7); box-shadow: 0 2px 12px rgba(255,255,255,0.7); }
-.ach_imgs li img { width: 100%; height: auto; display: block; }
+.ach_imgs li { color: #aaa; cursor: pointer; position: relative; margin: 0 4px 10px; width: 24%; overflow: hidden; }
+.ach_imgs li:hover { opacity: 1; z-index: 1; color: var(--white); -webkit-transition: all .3s linear; -o-transition: all .3s linear; transition: all .3s linear; -webkit-box-shadow: 0 2px 12px rgba(255,255,255,0.7); box-shadow: 0 2px 12px rgba(255,255,255,0.7); }
+.ach_imgs li:hover img { -webkit-transform: scale(1.1); -ms-transform: scale(1.1); transform: scale(1.1); -webkit-transition: all .3s linear; transition: all .3s linear; }
+.ach_imgs li img { width: 100%; height: auto; display: block; -webkit-transition: all .3s linear; transition: all .3s linear; }
 
 .skills { background: rgba(0,0,0,0.3); color: var(--white); }
 .skills_con { padding: 80px 30px; }

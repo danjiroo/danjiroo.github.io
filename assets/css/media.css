@@ -28,6 +28,7 @@
     .social_media { padding: 30px 25px; }
     .apps_ul li, .ach_imgs li { width: 23%; }
     .viewbtns { right: 15px }
+    .apps_desc p { line-height: 20px; font-size: 14px; }
 }
 @media only screen and (max-width: 850px ) {
     .apps_ul.active, .ach_imgs.active { -ms-flex-wrap: wrap; flex-wrap: wrap; }
@@ -47,7 +48,7 @@
     .wrapper.btm_achievements { padding: 50px 30px; }
     #modal_img { height: auto; }
     .viewbtns { position: static; transform: none; }
-    .viewless, .viewmore { display: inline; }
+    .viewless, .viewmore { display: inline; padding: 0 4px }
 }
 @media only screen and (max-width: 600px ) {
     body.active { margin-left: 0; }
