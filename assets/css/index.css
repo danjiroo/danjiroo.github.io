@@ -129,7 +129,7 @@ main { color: var(--white); font-size: 22px; line-height: 35px; }
 .apps_ul li { color: #aaa; position: relative; margin: 0 4px 10px; width: 24%; overflow: hidden; -webkit-transition: all .3s linear; transition: all .3s linear; }
 .apps_ul li:nth-child(n+5) { display:none; }
 .apps_ul li img { width: 100%; height: auto; display: block; -webkit-transition: all .3s linear; transition: all .3s linear; }
-.apps_ul li a.apps_button { font-size: 18px; position: absolute; bottom: 0; left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); color: var(--white); background: #13abb6; width: 100%; -webkit-transition: all .3s linear; -o-transition: all .3s linear; transition: all .3s linear; }
+.apps_ul li a.apps_button { font-size: 18px; position: absolute; bottom: 0; left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); color: #f9f9f9;; background: #13abb6; width: 100%; -webkit-transition: all .3s linear; -o-transition: all .3s linear; transition: all .3s linear; }
 .apps_ul a { display: block; }
 .apps_ul .apps_desc { opacity: 0; position: absolute; top: 0; left: 0; right: 0; bottom: 32px; color: #fff; display: flex; justify-content: center; align-items: center; background: linear-gradient( to top, var(--teal), hsla(189, 75%, 42%, 0.7)); flex-direction: column; -webkit-transition: all .3s linear; transition: all .3s linear; }
 .apps_desc p { margin: 0; padding: 10px 15px 0; letter-spacing: 0; text-align: center; line-height: 25px; font-size: 15px; }
