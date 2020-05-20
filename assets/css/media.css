@@ -52,6 +52,7 @@
     .apps_ul, .ach_imgs { -ms-flex-wrap: wrap; flex-wrap: wrap; margin: 0 auto; max-width: 100%; }
     .apps_ul li, .ach_imgs li { margin: 0 4px 10px; width: 45%; }
     .apps_ul li span { font-size: 17px; width: 97%; }
+    .apps_ul:hover li { opacity: 1 }
     .aboutme_imgs { margin: 50px 0 30px; }
     .aboutme_imgs li span q { margin: -15px; }
     .skills_list li { width: 32%; }
