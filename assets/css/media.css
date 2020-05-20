@@ -1,7 +1,4 @@
 /* Media Queries */
-@media only screen and (max-height: 850px) {
-    header .header_con { margin: 100px auto 0; }
-}
 @media only screen and (max-height: 700px) {
     #modal_iframe, #modal_img { height: 400px; }
 }
@@ -52,7 +49,6 @@
 }
 @media only screen and (max-width: 600px ) {
     body.active { margin-left: 0; }
-    header .header_con { margin: 100px auto 0; }
     .apps_ul, .ach_imgs { -ms-flex-wrap: wrap; flex-wrap: wrap; margin: 0 auto; max-width: 100%; }
     .apps_ul li, .ach_imgs li { margin: 0 4px 10px; width: 45%; }
     .apps_ul li span { font-size: 17px; width: 97%; }

@@ -33,11 +33,17 @@ img { width: 100%; max-width: 100%; display: block; height: auto; }
 .wrapper { width: 1000px; max-width: 100%; position: relative; margin: 0 auto; }
 
 /* Header */
-header { color: var(--white); text-align: center; font-family: inherit; }
-header .header_con { width: 375px; max-width:100%; margin: 200px auto 0; position: relative; z-index: 1; }
+header { color: var(--white); text-align: center; font-family: inherit; min-height: 100vh; display: flex; align-items: center; }
+header .header_con { width: 375px; max-width:100%; margin: 0 auto; position: relative; z-index: 1; }
 header h1 { color: var(--white); font-family: Calibri; font-size: 5vh; font-weight: 400; text-transform: uppercase; }
 header small { color: var(--white); font-size: 3vh; font-weight: 100; letter-spacing: 4px; height: 5vh }
 header p { padding-top: 40px; font-size: 19px; font-style: italic; color: var(---ccc); }
+.header_con a { font-size: 30px; position: absolute; top: 200%; left: 50%; transform: translateX(-50%); color: #fff; border: 1px solid #fff; border-radius: 50%; width: 40px; height: 40px; opacity: 0.4; -webkit-transition: all 1s linear; transition: all 1s linear; }
+.header_con a:hover { opacity: 0.7; }
+.header_con a span { transform: rotate(90deg); display: block; position: absolute; left: 50%; }
+.header_con a::before { position: absolute; content: ''; width: 1px; height: 31vh; background: var(--white); display: block; top: 40px; left: 50%; transform: translateX(-50%); opacity: 0.4; }
+.header_con a::after { content: ''; position: absolute; top: calc(31vh + 40px); left: 50%; transform: translateX(-50%); width: 100px; height: 3px; background: #fff; }
+.header_con a.clicked { opacity: 0 }
 
 #animLine { border-left: 2px solid var(--teal); -webkit-animation: blinkTextCursor 500ms infinite; animation: blinkTextCursor 500ms infinite; }
 @-webkit-keyframes blinkTextCursor{ from{border-left: 2px solid var(--teal);} to{border-left: 2px solid transparent;} }

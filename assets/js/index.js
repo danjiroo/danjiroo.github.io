@@ -110,6 +110,33 @@ $(function(){
 		}
 	});
 
+	
+
+	$('.header_con a').click(function () {
+		if(window.innerWidth < 1100) {
+			$("html, body").animate({
+				scrollTop: $($.attr(this, 'href')).offset().top - 80
+			}, 900);
+		} else {
+			$("html, body").animate({
+				scrollTop: $($.attr(this, 'href')).offset().top - 290
+			}, 900);
+		}
+		setTimeout(() => {
+			$(this).addClass('clicked')
+		}, 1000)
+	});
+
+	$(window).scroll(function(){
+		let port_yoffset = $('main').offset().top;
+		console.log(port_yoffset)
+		if(window.pageYOffset < port_yoffset) {
+			$('.header_con a').removeClass('clicked')
+		} else {
+			$('.header_con a').addClass('clicked')
+		}
+	});
+
 	$('.nav_list li a').click(function () {
 		closeSidebar();
 		$("html, body").animate({
