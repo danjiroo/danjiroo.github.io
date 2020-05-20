@@ -129,7 +129,6 @@ $(function(){
 
 	$(window).scroll(function(){
 		let port_yoffset = $('main').offset().top;
-		console.log(port_yoffset)
 		if(window.pageYOffset < port_yoffset) {
 			$('.header_con a').removeClass('clicked')
 		} else {
