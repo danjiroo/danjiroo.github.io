@@ -168,11 +168,11 @@ main { color: var(--white); font-size: 22px; line-height: 35px; }
 .aboutme_div p a:hover, .aboutme_div p strong:hover { text-decoration: underline; }
 .aboutme_div p strong { cursor: pointer }
 .aboutme_imgs { display: -webkit-box; display: -ms-flexbox; display: flex; color: var(--white); -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin: 0 0 30px; width: 100%; position: relative; left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); }
-.aboutme_div li { position: relative; }
+.aboutme_div li { position: relative; -webkit-transition: all .3s linear; transition: all .3s linear; }
 .aboutme_imgs:hover li { opacity: 0.8; -webkit-filter: grayscale(60); filter: grayscale(60); -webkit-transition: all .3s linear; -o-transition: all .3s linear; transition: all .3s linear; }
 .aboutme_imgs li:hover { opacity: 1; -webkit-filter: none; filter: none; -webkit-transition: all .3s linear; -o-transition: all .3s linear; transition: all .3s linear; }
-.aboutme_imgs li:hover > span { opacity: 1; }
-.aboutme_imgs li span { opacity: 0; position: absolute;  top: 0; left: 0; right: 0; left: 0; text-transform: uppercase; font-size: 65px; width: 100%; height: 100%; background: rgba(0,0,0,0.8); display: -webkit-box; display: -ms-flexbox; display: flex; text-align: center; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+.aboutme_imgs li:hover > span { opacity: 1; -webkit-transition: all .3s linear; transition: all .3s linear; }
+.aboutme_imgs li span { opacity: 0; position: absolute;  top: 0; left: 0; right: 0; left: 0; text-transform: uppercase; font-size: 65px; width: 100%; height: 100%; background: rgba(0,0,0,0.8); display: -webkit-box; display: -ms-flexbox; display: flex; text-align: center; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-transition: all .3s linear; transition: all .3s linear; }
 .aboutme_imgs li span q { display: block; font-family: 'Lobster Two', cursive; font-size: 50px; text-transform: none;  margin-top: -25px; line-height: 110%; }
 
 .wrapper.btm_achievements { padding: 100px 30px 150px; color: var(--white); }
