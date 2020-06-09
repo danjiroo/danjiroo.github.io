@@ -128,7 +128,11 @@ $(function(){
 	});
 
 	$(window).scroll(function(){
-		let port_yoffset = $('main').offset().top;
+		let windowScroll = $(this).scrollTop(),
+			port_yoffset = $('main').offset().top - 200;
+
+		// $('.header_con').css('top',(windowScroll * .3) + "px");
+
 		if(window.pageYOffset < port_yoffset) {
 			$('.header_con a').removeClass('clicked')
 		} else {
