@@ -2,8 +2,6 @@
 
 # Danilo Quesada III
 
-> Web Developer
+https://danjiroo.github.io/
 
-> Designer
-
-> Otaku
+> My first portfolio, outdated and too much unnecessary stuff
